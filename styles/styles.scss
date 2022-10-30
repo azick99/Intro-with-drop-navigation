@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.1rem;
+    background-color: var(--almost-white);
+}
+
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --gedium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+
+/*Navigation Part*/
+.navbar-brand {
+    margin: 0 4rem 0 1.5rem;
+}
+
+li {
+    margin: 0.8rem 1rem;
+    padding: 0 0.5rem;
+}
+
+.navbar {
+    transition: top 0.3s;
+}
+
+.authorisation {
+    position: absolute;
+    right: 2%;
+    display: flex;
+    flex-direction: row;
+
+    .nav-item:last-child {
+        border: 1px solid var(--gedium-gray);
+        border-radius: 13px;
+        transition: 0.3s;
+        max-width: 100px;
+
+        &:hover {
+            background-color: var(--gedium-gray);
+        }
+
+        .nav-link:hover {
+            color: var(--almost-white);
+        }
+    }
+}
+
+// Mobile Navigation
+
+// Mobile Size of authorisation
+.authorisation-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .nav-item:last-child {
+        border: 1px solid var(--gedium-gray);
+        border-radius: 13px;
+        transition: 0.3s;
+        width: 80%;
+        text-align: center;
+
+        &:hover {
+            background-color: var(--gedium-gray);
+        }
+
+        .nav-link:hover {
+            color: var(--almost-white);
+        }
+    }
+}
+// Mobile Size of sidebar
+.w3-sidebar {
+    transition: all .4s ease-in-out;
+    z-index: 5;
+    .nav-link {
+        color: rgba(0, 0, 0, 0.55);
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.7);
+        }
+        img {
+            margin-right: 15px;
+        }
+    }
+}
+
+/*Dropdown*/
+.dropdown li {
+    margin: 0;
+    padding: 3px 0;
+
+    a {
+        padding: 3px 25px;
+    }
+
+    img {
+        margin-right: 15px;
+    }
+}
+
+.feature-drop,
+.company-drop {
+    padding: 15px 0;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2), ;
+    border: none;
+    position: absolute !important;
+    top: 40px !important;
+
+}
+
+.feature-drop {
+    left: -50px !important;
+}
+
+.company-drop {
+    left: 10px !important;
+}
+
+
+/*Main part*/
+.row{
+    flex-direction: row-reverse;
+}
+.hero-img {
+    max-width: 85%;
+    margin-left: 20%;
+}
+
+main {
+    padding: 17% 13% 3%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 10%;
+}
+
+.text {
+    max-width: 400px;
+    margin-bottom: 8%;
+    color: var(--gedium-gray);
+}
+
+.btn {
+    padding: 10px 25px;
+    background-position: center;
+    border-radius: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+    margin-bottom: 20%;
+    background-color: var(--almost-black);
+    color:var(--almost-white);
+    &:hover {
+        border: 1px solid var(--almost-black) !important;
+        background-color: var(--almost-white);
+        color: var(--almost-black) ;
+    }
+}
+
+/*compnies logo*/
+.company-logo img {
+    margin-right: 20px;
+}

@@ -1,0 +1,46 @@
+@media screen and (max-width: 900px) {
+  .navbar-brand {
+    margin-left: 6px;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .w3-sidebar {
+    width: 65%;
+    right: 0;
+  }
+  li {
+    margin: 0.3rem 1rem;
+    padding: 0 0.5rem;
+  }
+  main {
+    padding: 20% 0%;
+  }
+  .hero-img {
+    margin-left: 0;
+    width: 100%;
+  }
+  article {
+    text-align: center;
+    padding: 20% 0 10%;
+  }
+  article h1 {
+    font-size: 2.6rem;
+    margin-bottom: 0;
+  }
+  article .text {
+    margin: 5% auto 8%;
+  }
+  .company-logo img {
+    margin-right: 6%;
+    width: 16%;
+  }
+}
+@media screen and (min-width: 901px) {
+  .authorisation {
+    position: absolute;
+    right: 2%;
+    display: flex;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=mobile.css.map */
